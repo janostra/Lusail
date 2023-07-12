@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    height: 100vh;
+}
+
+header {
+    height: 25vh;
+}
+
+main {
+    height: 65vh;
+}
+
+footer {
+    height: 10vh;
+}
