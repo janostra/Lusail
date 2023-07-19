@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Pagina principal</title>
 </head>
 <body class="bg-success">
 
-     <header class="container-fluid bg-success-subtle col-10">
+     <header class="container-fluid bg-success-subtle col-10 mb-5">
             <div class="row">
                 <div class="col-sm-10 col-md-4 col-lg-4 col-xl-4 d-flex flex-column align-items-start align-items-center justify-content-center">
                     <p id="indexInicio"></p>
@@ -19,7 +22,7 @@
                     <h3>Futbol de verdad.</h3>
                 </div>
                 <nav class="col-sm-10 col-md-8 col-lg-8 col-xl-8 bg-success-subtle">
-                    <ul id="miLista" class="d-flex justify-content-evenly align-items-center h-100">
+                    <ul class="d-flex justify-content-evenly align-items-center h-100">
                         <li><a class="btn btn-light" href="./index.html">Home</a></li>
                         <li><a class="btn btn-light" href="./pages/contacto.html">Contacto</a></li>
                         <li><a class="btn btn-light" href="./pages/servicios.html">Servicios</a></li>
@@ -30,36 +33,38 @@
             </div>
       </header>
 
-    <main class="container-fluid bg-success h-100">
-        <div class="h-10 row"><p></p></div>
-        <div class="row h-55">
-            <section class="d-flex justify-content-around align-items-center col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                <form>
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Correo electronico:</label>
-                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electronico">
-                      <small id="emailHelp" class="form-text text-muted"></small>
+    <main class="container-fluid bg-success mb-5 row">
+            <div class="container col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <div class="card rounded p-4 bg-success-subtle my-object border border-black border-3">
+                      <h3 class="text-center">Iniciar sesión</h3>
+                      <form>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Correo electrónico</label>
+                          <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico">
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+                        </div>
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                        </div>
+                      </form>
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Contraseña:</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
-                    </div>
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Verificar</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                  </form>
-            </section>
-            <h2 class="col-6">En esta pagina web vas a poder conocer nuestro predio sin necesidad de verlo fisicamente!
-              A travez de nuestro navegador tendrás la posibilidad de usar las funciones de usuario, tales como 
-              reservar turnos, ver grabaciones, entre otros...
-              Tambien podras contactarnos en caso de tener consultas, nuestro staff va a estar disponible en una gran 
-              franja horaria para responder!
-            </h2>
+                  </div>
+                </div>
             </div>
-        <div class="h-10 row"><p></p></div>
-        <div class="d-flex justify-content-center align-items-center row h-25">
+            <section class="col-sm-12 col-md-6 col-lg-6 col-xl-6 rounded p-3 bg-success-subtle my-object border border-black border-3" >
+                <h2 class="text-center">En esta pagina web vas a poder conocer nuestro predio sin necesidad de verlo fisicamente!
+                    A travez de nuestro navegador tendrás la posibilidad de usar las funciones de usuario, tales como 
+                    reservar turnos, ver grabaciones, entre otros...
+                    Tambien podras contactarnos en caso de tener consultas, nuestro staff va a estar disponible en una gran 
+                    franja horaria para responder!
+                  </h2>
+            </section>
+        <div class="d-flex justify-content-center align-items-center row mt-3">
                 <h2 class="col-md-3 text-center">Sobre nosotros:</h2>
                 <p class="text-center"> Somos un espacio en donde podrás llevar a cabo los encuentros futbolisticos mas divertidos 
                     que hayas soñado.
@@ -70,7 +75,7 @@
     </main>
 
     
-    <footer class="bg-success-subtle d-flex justify-content-center align-items-center row">
+    <footer class="bg-success-subtle d-flex justify-content-center align-items-center row mt-5">
         <p class="col-md-4 text-center">Todos los derechos reservados ℗</p>
         <a class="col-md-9 text-center" href="./index.html#indexInicio" >volver al cielo</a>
     </footer>
