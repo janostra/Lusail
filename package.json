@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-html-2",
+  "version": "1.0.0",
+  "description": "Las paginas que son responsive son la Main y la de Grabaciones\r Se cambio el nombre de Main por Home\r las paginas grabaciones y perfil se borraron\r se agregaron las paginas servicion y sobre nosotros\r las paginas responsive son home y servicios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
