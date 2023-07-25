@@ -29,53 +29,8 @@ body {
         a {
           text-decoration: none;
           color: #333;
+          font-size: 24px !important; 
         }
-      }
-    }
-  
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    nav {
-      display: none; /* Ocultamos el menú principal */
-    }
-  
-    /* Estilo del botón del menú desplegable */
-    .menu-btn {
-      display: block; /* Cambiar display a flex */
-      background-color: transparent;
-      border: none;
-      cursor: pointer;
-      font-size: 36px;
-      color: #fff;
-      justify-content: flex-end;
-    }
-  
-    /* Estilos para mostrar el menú al hacer clic en el botón */
-    #menu-toggle:checked + nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: green;
-        border-left: solid black;
-        border-bottom: solid black;
-        border-right: solid black;
-        border-radius: 0px 0px 5px 5px;
-        margin-top: 10px;
-    }
-      #menu-toggle:checked + nav ul li {
-        margin: 5px 0;
-      }
-    }
-  
-  
-    /* Estilos para el modo escritorio */
-    @media (min-width: 769px) {
-      .menu-btn {
-        display: none; /* Ocultamos el botón del menú en modo escritorio */
-      }
-  
-      nav {
-        display: block; /* Mostramos el menú principal en modo escritorio */
       }
     }
   }
@@ -88,70 +43,33 @@ body {
     transform: scale(1.1);
   }
   
-
-
-
-// body {
-//     font-family: 'Roboto Condensed', sans-serif !important;
-//     background-image: url(../assets/images/soccer-center.jpg) !important;
-//   }
-
-//   header {
-//     padding: 10px;
-//     background-color: green;
-//     border-left: solid black;
-//     border-bottom: solid black;
-//     border-right: solid black;
-//     border-radius: 0px 0px 5px 5px;
-//     h1 {
-//         font-size: 36px;
-//   }
-//     h3 {
-//         font-size: 24px;
-//   }
-//     nav ul {
-//         list-style: none;
-//         display: flex;
-//         li {
-//             margin-right: 10px;
-//             a {
-//                 text-decoration: none;
-//                 color: #333;
-//               }
-//           }
-//  }
-//   }
+  .navegador {
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+  }
   
-  
-//   .my-object {
-//     transition: transform 0.2s ease-in-out;
-//   }
-  
-//   .my-object:hover {
-//     transform: scale(1.1);
-//   }
-//     /* Estilos para el modo responsive */
-//     @media (max-width: 768px){
-//         header {
-//           flex-direction: column;
-//           align-items: center;
-//         }
+
+    @media (max-width: 768px){
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
       
-//         header h1, header h3 {
-//           text-align: center;
-//         }
+        header h1, header h3 {
+          text-align: center;
+        }
       
-//         nav {
-//           margin-top: 10px;
-//         }
+        nav {
+          margin-top: 10px;
+        }
       
-//         nav ul {
-//           flex-direction: column;
-//           align-items: center;
-//         }
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
       
-//         nav ul li {
-//           margin: 5px 0;
-//         }
-//       }
-      
+        nav ul li {
+          margin: 5px 0;
+        }
+      }

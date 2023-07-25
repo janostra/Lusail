@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Roboto Condensed", sans-serif !important;
   background-image: url(../assets/images/soccer-center.jpg) !important;
@@ -11,8 +10,6 @@ header {
   border-bottom: solid black;
   border-right: solid black;
   border-radius: 0px 0px 5px 5px;
-  /* Estilos para dispositivos móviles */
-  /* Estilos para el modo escritorio */
 }
 header h1 {
   font-size: 36px;
@@ -30,42 +27,7 @@ header nav ul li {
 header nav ul li a {
   text-decoration: none;
   color: #333;
-}
-@media (max-width: 768px) {
-  header nav {
-    display: none; /* Ocultamos el menú principal */
-  }
-  header .menu-btn {
-    display: block; /* Cambiar display a flex */
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 36px;
-    color: #fff;
-    justify-content: flex-end;
-  }
-  header #menu-toggle:checked + nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: green;
-    border-left: solid black;
-    border-bottom: solid black;
-    border-right: solid black;
-    border-radius: 0px 0px 5px 5px;
-    margin-top: 10px;
-  }
-  header #menu-toggle:checked + nav ul li {
-    margin: 5px 0;
-  }
-}
-@media (min-width: 769px) {
-  header .menu-btn {
-    display: none; /* Ocultamos el botón del menú en modo escritorio */
-  }
-  header nav {
-    display: block; /* Mostramos el menú principal en modo escritorio */
-  }
+  font-size: 24px !important;
 }
 
 .my-object {
@@ -74,6 +36,32 @@ header nav ul li a {
 
 .my-object:hover {
   transform: scale(1.1);
+}
+
+.navegador {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header h1, header h3 {
+    text-align: center;
+  }
+  nav {
+    margin-top: 10px;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 5px 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
