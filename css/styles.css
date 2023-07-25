@@ -32,10 +32,6 @@ header nav ul li a {
   color: #333;
 }
 @media (max-width: 768px) {
-  header {
-    /* Estilo del botón del menú desplegable */
-    /* Estilos para mostrar el menú al hacer clic en el botón */
-  }
   header nav {
     display: none; /* Ocultamos el menú principal */
   }
