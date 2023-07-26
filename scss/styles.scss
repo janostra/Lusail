@@ -1,5 +1,8 @@
 @import '_header';
 @import '_index';
+@import '_contacto';
+@import '_turnos';
+@import '_footer';
 
 body {
     font-family: 'Roboto Condensed', sans-serif !important;
@@ -17,13 +20,5 @@ body {
   .navegador {
     width:100%;
     justify-content: space-between;
-  }
-   
-  .row{
-    margin-right: 0;
-    margin-left: 0;
-  }
-  .row>*{
-    padding: 0;
   }
 

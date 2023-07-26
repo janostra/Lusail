@@ -1,0 +1,25 @@
+.turnos {
+    background-color: green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: solid black 3px;
+    border-radius: 3px;
+}
+
+@media (min-width: 992px) {
+    .turnos {
+        width: 25%;
+    }
+}
+
+@media (max-width: 991px) {
+    .turnos {
+        width: 50%;
+    }
+}
+
+.faq {
+    background-color: green;
+    margin: 0px 10px 10px 10px;
+    border: solid black;
+}
