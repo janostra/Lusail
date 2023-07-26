@@ -25,6 +25,21 @@ header nav ul li a {
   font-size: 24px !important;
 }
 
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #00ff33;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  padding: 0px !important;
+}
+
 .custom-toggler {
   position: absolute;
   right: 15px;
@@ -75,6 +90,7 @@ header nav ul li a {
 
 .desc {
   background-color: green;
+  margin-top: 10px;
 }
 
 .login {
@@ -86,15 +102,6 @@ header nav ul li a {
     margin-bottom: 5px;
   }
 }
-.row {
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.row > * {
-  padding: 0;
-}
-
 /* Estilos para pantallas grandes (más de 1200px) */
 @media (min-width: 1201px) {
   main {
@@ -120,6 +127,7 @@ header nav ul li a {
   }
 }
 .turnos {
+  box-sizing: border-box;
   background-color: green;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -139,7 +147,7 @@ header nav ul li a {
 }
 .faq {
   background-color: green;
-  margin: 0px 10px 10px 10px;
+  margin: 10px;
   border: solid black;
 }
 
@@ -165,6 +173,15 @@ body {
 .navegador {
   width: 100%;
   justify-content: space-between;
+}
+
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.row > * {
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

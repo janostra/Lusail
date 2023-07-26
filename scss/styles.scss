@@ -1,3 +1,4 @@
+@import '_mixin';
 @import '_header';
 @import '_index';
 @import '_contacto';
@@ -21,4 +22,10 @@ body {
     width:100%;
     justify-content: space-between;
   }
-
+  .row{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .row>*{
+    padding: 0;
+  }

@@ -1,0 +1,11 @@
+// Definición del mixin
+@mixin boton-estilo {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #00ff33;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
