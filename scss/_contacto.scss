@@ -1,4 +1,23 @@
+  main div form {
+    margin: 5px;
+  }
+  
+  .mapa {
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 300px;
 
+  }
+
+  .contacto {
+    background-color: green;
+    border: solid black 3px;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
   /* Estilos para pantallas grandes (más de 1200px) */
   @media (min-width: 1201px) {
     main {
@@ -13,9 +32,8 @@
     }
   }
   
-  /* Estilos para pantallas medianas (entre 992px y 1200px) */
 
-  /* Estilos para pantallas pequeñas (menos de 992px) */
+  /* Estilos para pantallas pequeñas (menos de 1200px) */
   @media (max-width: 1200px) {
     main {
       display: flex;
@@ -24,6 +42,6 @@
     }
   
     .col-xl-6 {
-      width: 100%;
+      width: 50%;
     }
   }
