@@ -1,38 +1,9 @@
+@import '_header';
+@import '_index';
+
 body {
     font-family: 'Roboto Condensed', sans-serif !important;
     background-image: url(../assets/images/soccer-center.jpg) !important;
-  }
-  
-  header {
-    padding: 10px;
-    background-color: green;
-    border-left: solid black;
-    border-bottom: solid black;
-    border-right: solid black;
-    border-radius: 0px 0px 5px 5px;
-  
-    h1 {
-      font-size: 36px;
-    }
-  
-    h3 {
-      font-size: 24px;
-    }
-  
-    nav ul {
-      list-style: none;
-      display: flex;
-  
-      li {
-        margin-right: 10px;
-  
-        a {
-          text-decoration: none;
-          color: #333;
-          font-size: 24px !important; 
-        }
-      }
-    }
   }
   
   .my-object {
@@ -46,30 +17,13 @@ body {
   .navegador {
     width:100%;
     justify-content: space-between;
-    align-items: center;
   }
-  
+   
+  .row{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .row>*{
+    padding: 0;
+  }
 
-    @media (max-width: 768px){
-        header {
-          flex-direction: column;
-          align-items: center;
-        }
-      
-        header h1, header h3 {
-          text-align: center;
-        }
-      
-        nav {
-          margin-top: 10px;
-        }
-      
-        nav ul {
-          flex-direction: column;
-          align-items: center;
-        }
-      
-        nav ul li {
-          margin: 5px 0;
-        }
-      }

@@ -1,0 +1,90 @@
+header {
+    padding: 10px;
+    background-color: green;
+    border-left: solid black;
+    border-bottom: solid black;
+    border-right: solid black;
+    border-radius: 0px 0px 5px 5px;
+  
+    h1 {
+      font-size: 36px;
+    }
+  
+    h3 {
+      font-size: 24px;
+    }
+  
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      li {
+        a {
+          text-decoration: none;
+          color: #333;
+          font-size: 24px !important; 
+        }
+      }
+    }
+  }
+  
+  .custom-toggler {
+
+    position: absolute;
+    right: 15px; // Puedes ajustar este valor según tus necesidades
+    transform: translateY(-50%); // Lo movemos hacia arriba la mitad de su altura para centrarlo correctamente verticalmente
+
+    // Definimos la rotación inicial del botón
+    transform: rotate(0deg);
+
+    // Transición para animar el botón cuando cambie su estado (marcado/desmarcado)
+    transition: transform 0.3s ease-in-out;
+
+    // Establecemos un ancho y altura para el botón hamburguesa
+    width: 30px;
+    height: 30px;
+
+    // Ocultamos el borde predeterminado del botón
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .custom-toggler[aria-expanded="true"] {
+
+    // Rotación del botón cuando está desplegado (por ejemplo, 90 grados)
+    transform: rotate(90deg);
+  }
+  
+  
+@media (max-width: 768px){
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    header h1, header h3 {
+      text-align: center;
+    }
+  
+    nav {
+      margin-top: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 5px 0;
+    }
+  }
+
+  @media (min-width: 992px){
+    nav ul {
+        margin-top: 20px;
+    }
+  }
