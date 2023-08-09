@@ -1,6 +1,6 @@
 .turnos {
     box-sizing: border-box;
-    background-color: green;
+    background-color: $color;
     margin-top: 5px;
     margin-bottom: 5px;
     border: solid black 3px;
@@ -20,7 +20,7 @@
 }
 
 .faq {
-    background-color: green;
+    background-color: $color;
     margin: 5px;
     border: solid black;
 }
