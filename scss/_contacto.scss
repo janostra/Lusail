@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: center;
     width: auto;
-    height: 300px;
+    height: 350px;
 
   }
 
@@ -38,4 +38,10 @@
       align-items: center;
     }
 
+  }
+
+  @media (max-width: 375px) {
+    .mapa{
+      display: none;
+    }
   }
