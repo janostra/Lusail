@@ -125,9 +125,6 @@ main div form {
     justify-content: space-between;
     align-items: flex-start;
   }
-  .col-xl-6 {
-    width: 50%;
-  }
 }
 /* Estilos para pantallas pequeñas (menos de 1200px) */
 @media (max-width: 1200px) {
@@ -135,9 +132,6 @@ main div form {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  .col-xl-6 {
-    width: 50%;
   }
 }
 .turnos {
@@ -147,6 +141,12 @@ main div form {
   margin-bottom: 5px;
   border: solid black 3px;
   border-radius: 3px;
+}
+
+.faq {
+  background-color: green;
+  margin: 5px;
+  border: solid black;
 }
 
 @media (min-width: 992px) {
@@ -159,12 +159,6 @@ main div form {
     width: 50%;
   }
 }
-.faq {
-  background-color: green;
-  margin: 5px;
-  border: solid black;
-}
-
 .carta {
   background-color: #00ff33;
   margin: 2px;
