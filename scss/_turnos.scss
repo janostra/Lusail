@@ -7,6 +7,13 @@
     border-radius: 3px;
 }
 
+.faq {
+    background-color: $color;
+    margin: 5px;
+    border: solid black;
+    padding: 10px !important;
+}
+
 
 @media (min-width: 992px) {
     .turnos {
@@ -24,11 +31,5 @@
     .turnos {
         width: 90%;
     }
-}
-
-.faq {
-    background-color: $color;
-    margin: 5px;
-    border: solid black;
 }
 

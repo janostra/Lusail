@@ -148,6 +148,13 @@ main div form {
   border-radius: 3px;
 }
 
+.faq {
+  background-color: green;
+  margin: 5px;
+  border: solid black;
+  padding: 10px !important;
+}
+
 @media (min-width: 992px) {
   .turnos {
     width: 25%;
@@ -163,12 +170,6 @@ main div form {
     width: 90%;
   }
 }
-.faq {
-  background-color: green;
-  margin: 5px;
-  border: solid black;
-}
-
 .carta {
   background-color: #00ff33;
   margin: 2px;
