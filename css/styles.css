@@ -107,7 +107,7 @@ main div form {
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 350px;
+  height: 336px;
 }
 
 .contacto {
@@ -176,7 +176,21 @@ main div form {
   border-radius: 5px;
 }
 
+.imagen {
+  height: 200px;
+  width: 200px;
+  border: solid black 1px;
+}
+
+@media (max-width: 575px) {
+  .imagen {
+    display: none;
+  }
+}
 footer {
+  position: absolute;
+  bottom: auto;
+  width: 100%;
   background-color: green;
   border-top: solid black;
   padding: 5px;
